@@ -1,0 +1,5 @@
+{
+  "siteName": "{SITE_NAME}",
+  "apiUrl": "https://api.{SITE_NAME}.com",
+  "staticUrl": "https://static.{SITE_NAME}.com"
+}

@@ -1,0 +1,41 @@
+
+.Span {
+  padding: 0;
+  margin: 0;
+  line-height: 1.25rem;
+}
+
+.Span.size-lg {
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+}
+
+.Span.size-xl {
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+}
+
+.Span.size-sm {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+
+.Span.size-xs {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.Span.bold {
+  font-weight: bold;
+}
+
+.Span.upper {
+  text-transform: uppercase;
+}
+
+.Span.truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

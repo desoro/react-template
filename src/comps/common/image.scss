@@ -1,0 +1,22 @@
+
+.Image {  
+  background-color: var(--background-color-3);
+  overflow: hidden;
+  position: relative;
+  height: 0; 
+
+  img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+  }
+}
+
+.Image.round {
+  border-radius: 100%;
+}
+
+.Image.btn:hover {
+  filter: brightness(115%);
+}

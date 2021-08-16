@@ -1,0 +1,29 @@
+
+.Heading {
+  display: inline-block;  
+  line-height: 1em;
+  margin: 0;
+}
+
+.Heading.small-caps {
+  font-variant: small-caps;
+}
+
+.Heading.cap {
+  text-transform: capitalize;
+}
+
+.Heading.upper {
+  text-transform: uppercase; 
+}
+
+.Heading.center {
+  text-align: center;
+}
+
+.Heading.truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

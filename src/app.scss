@@ -1,0 +1,186 @@
+
+#index { 
+  --primary-color-1:          rgb(160, 141, 105);
+  --primary-color-2:          rgb(199, 168, 111);
+  --primary-color-3:          rgb(224, 190, 127);
+
+  --background-color-1:       rgb(56, 51, 45);
+  --background-color-2:       rgb(65, 58, 52);
+  --background-color-3:       rgb(68, 62, 55);
+  --background-color-4:       rgb(74, 68, 57);
+  --background-color-5:       rgb(82, 75, 67);
+  --background-color-6:       rgb(94, 89, 79);
+  --background-color-7:       rgb(100, 96, 87);
+
+  --content-color-1:          rgb(241, 241, 241); 
+  --content-color-2:          rgb(201, 198, 190);
+  --content-color-3:          rgb(190, 187, 178);
+  --content-color-4:          rgb(175, 173, 166);
+  --content-color-5:          rgb(148, 146, 139);
+
+  --error-bg-color:           rgb(187, 35, 50);
+  --error-text-color:         rgb(214, 74, 88);
+
+  --red-color:                rgb(216, 32, 63); 
+  --light-red-color:          rgb(255, 122, 133);
+  --green-color:              rgb(0, 156, 21); 
+  --blue-color:               rgb(8, 89, 211);
+  --light-blue-color:         rgb(142, 187, 255);
+  --yellow-color:             rgb(255, 225, 58);  
+  --orange-color:             rgb(230, 119, 1);  
+  --light-orange-color:       rgb(255, 186, 112);  
+  --purple-color:             rgb(182, 73, 255);
+  --light-purple-color:       rgb(216, 157, 255);
+  --brown-color:              rgb(95, 65, 37);  
+  --light-brown-color:        rgb(248, 204, 164);
+  --lime-color:               rgb(10, 230, 40); 
+  --cyan-color:               rgb(10, 238, 234); 
+  --wood-color:               rgb(156, 104, 84);
+  --bronze-color:             rgb(209, 71, 16);
+  --silver-color:             rgb(211, 211, 211);
+  --gold-color:               rgb(255, 188, 2);
+  --white-color:              rgb(245, 245, 245);
+  --gray-color:               rgb(114, 114, 114);  
+  --black-color:              rgb(34, 34, 34);
+  --rarity-1-color:           rgb(114, 114, 114);  
+  --rarity-2-color:           rgb(0, 126, 27);  
+  --rarity-3-color:           rgb(0, 122, 126);  
+  --rarity-4-color:           rgb(100, 24, 145);
+
+  --border:                   1px solid rgb(94, 89, 79);
+  --border-radius:            1.00rem;
+  --inner-shadow:             inset 0 0 20px rgba(0, 0, 0, 0.1);
+  --outer-shadow:             0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  --outer-shadow-dense:       0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+  --text-shadow:              1px  1px 0 rgb(36, 36, 36);
+  --text-stroke:             -1px -1px 0 rgb(36, 36, 36),
+                              0   -1px 0 rgb(36, 36, 36),
+                              1px -1px 0 rgb(36, 36, 36),
+                              1px  0   0 rgb(36, 36, 36),
+                              1px  1px 0 rgb(36, 36, 36),
+                              0    1px 0 rgb(36, 36, 36),
+                             -1px  1px 0 rgb(36, 36, 36),
+                             -1px  0   0 rgb(36, 36, 36);
+
+  --gap: 1rem;
+    
+  @media (min-width: 768px) {
+    --gap: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    --gap: 2rem;
+  }
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('./fonts/Kanit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('./fonts/Kanit-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;  
+}
+
+html, #index, #root {
+  height: 100%;
+}
+
+#index {
+  margin: 0;
+  padding: 0;  
+  overflow-y: scroll;
+}
+
+#root {
+  position: relative;   
+  display: flex;  
+  flex-flow: column;
+  align-items: center;
+}
+
+html { 
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) {
+    font-size: 17px;
+  }
+}
+
+h1, h2, h3, h4, h5, button {
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  color: var(--content-color-1);
+}
+
+h1 { 
+  font-size: 1.6rem 
+}
+h2 { 
+  font-size: 1.4rem 
+}
+h3 { 
+  font-size: 1.25rem 
+}
+h4 { 
+  font-size: 1.1rem 
+}
+h5 { 
+  font-size: 1.0rem 
+}
+
+p {
+  margin: 0.75rem 0;
+
+  @media (min-width: 768px) {
+    margin: 1rem 0;
+  }
+}
+
+p, span, li, input, label, textarea {
+  font-family: 'Kanit', sans-serif;
+  font-weight: normal;
+  color: var(--content-color-2);
+  font-size: 1rem 
+}
+
+a { 
+  display: inline-block;
+  position: relative;
+  color: var(--primary-color-2);
+}
+a:hover { 
+  color: var(--primary-color-3);
+}
+a, a:hover { 
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-color-5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color-6);
+}

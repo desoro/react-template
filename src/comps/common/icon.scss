@@ -1,0 +1,51 @@
+
+.Icon {
+  color: var(--content-color-1);
+
+  svg {
+    vertical-align: 0 !important;
+    height: 1.0rem !important;
+    width: 1.0rem !important;
+    overflow: visible;
+  }  
+}
+
+.Icon.size-xs svg {
+  height: 0.75rem !important;
+  width: 0.75rem !important; 
+}
+.Icon.size-sm svg {
+  height: 0.9rem !important;
+  width: 0.9rem !important; 
+}
+.Icon.size-lg svg {
+  height: 1.25rem !important;
+  width: 1.25rem !important;
+}
+.Icon.size-xl svg {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+}
+
+.Icon.btn {
+  box-sizing: content-box;  
+  background-color: var(--background-color-6);
+  border: 0.5px solid transparent;
+  border-radius: 100%;
+  padding: 0.45rem;
+  cursor: pointer;
+}
+
+.Icon.btn:hover {
+  background-color: var(--background-color-7);
+}
+
+.Icon.hover {
+  border-radius: 100%;
+  padding: 0.45rem;
+  cursor: pointer;
+}
+
+.Icon.hover:hover {
+  background-color: var(--background-color-6);
+}

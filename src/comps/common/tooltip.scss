@@ -1,0 +1,26 @@
+
+.Tooltip {
+  .hover-box {
+    position: relative;
+    display: none;
+    justify-content: center;
+    pointer-events: none;  
+  }
+
+  .hover-text {
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--background-color-4);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--outer-shadow);
+    margin-top: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    z-index: 3001;
+  }
+}
+.Tooltip:hover {  
+  .hover-box {
+    display: flex;
+  }
+}

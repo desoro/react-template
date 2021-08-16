@@ -1,0 +1,15 @@
+
+.Main {
+  background-color: var(--background-color-1);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+  position: relative;  
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  width: 100%;   
+
+  .main-content {
+    width: 100%;
+    height: 100%;
+  }
+}

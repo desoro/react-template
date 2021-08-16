@@ -1,0 +1,30 @@
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+.Spinner {
+  border: 6px solid var(--content-color-5);
+  border-top: 6px solid var(--primary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;  
+  animation: spin 1s linear infinite;
+}
+
+.Spinner.size-sm {
+  width: 24px;
+  height: 24px;
+  border-width: 3px;
+}
+
+.Spinner.size-lg {
+  width: 88px;
+  height: 88px;
+  border-width: 8px;
+}

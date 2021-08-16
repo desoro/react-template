@@ -1,0 +1,45 @@
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-1);
+  border-radius: var(--border-radius);  
+  border: none;
+  outline: none !important;  
+  padding: 0 0.75rem;  
+  height: 2.5rem;
+}
+
+.Button.disabled {
+  opacity: 0.4;
+}
+
+.Button:not(.disabled) {  
+  cursor: pointer;
+}
+
+.Button:hover:not(.disabled) {
+  background-color: var(--primary-color-2);
+}
+
+.Button.size-xs {
+  padding: 0 0.5rem;  
+  height: 2rem;
+}
+.Button.size-sm {
+  padding: 0 0.75rem;  
+  height: 2.25rem;
+}
+.Button.size-lg {
+  padding: 0 1.5rem;  
+  height: 3rem;
+}
+.Button.size-xl {
+  padding: 0 2rem;  
+  height: 4rem;
+}
+
+.Button.fill {
+  width: 100%;
+}
